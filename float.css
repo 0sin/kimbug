@@ -1,0 +1,46 @@
+/* selector {
+  property: value;
+} */
+
+* {
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.parent {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #eff2f7;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  color: white;
+}
+
+.red {
+  float: left;
+  background-color: #ff4949;
+}
+.yellow {
+  float: left;
+  background-color: #ffc82c;
+}
+.blue {
+  float: left;
+  /* clear: both; */
+  background-color: #0066ff;
+}
+.parent::after {
+  content: "";
+  display: block;
+  clear: both;
+
+}

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #273444;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.user-card {
+  max-width: 180px;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user-photo {
+  float: left;
+  position: relative;
+  margin-right: 12px;
+}
+
+.user-photo img{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-status {
+  /* display: block; */
+  /* 앱솔루트로 뜨는 순간 dixplay는 block 처리 됨 */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.user-name {
+  float: left;
+  line-height: 40px;
+}
