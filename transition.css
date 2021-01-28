@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  /* all: unset; */
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button,
+input,
+textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+.line-button {
+  display: inline-block;
+  width: 110px;
+  height: 56px;
+  background-color: white;
+  color: #151B26;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.line-button::after {
+  content: '';
+  position: absolute;
+  /* absolute가 되면 모든 아이템은 display: block으로 신분상승 */
+  bottom: 0; left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 250ms ease-in, background-color 250ms ;
+}
+
+.line-button:hover::after {
+  width: 100%;
+  background-color: palevioletred;
+}
+
