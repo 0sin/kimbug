@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  all: unset;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Mulish', sans-serif;
+  color: #151B26;
+  font-size: 18px;
+  line-height: 1.3333333;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  height: 56px;
+  color: white;
+  text-align: center;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: box-shadow 250ms;
+}
+.cancle-btn:hover {
+  box-shadow: 0px 6px 24px 0 tomato;
+}
+.confirm-btn:hover {
+  box-shadow: 0px 6px 24px 0 chartreuse;
+}
+
+.cancle-btn {
+  margin: 0 25px 0 0;
+  background-color: tomato;
+}
+.confirm-btn {
+  background-color: chartreuse;
+}
